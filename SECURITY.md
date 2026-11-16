@@ -13,7 +13,7 @@ This project is in early development and does not currently publish versioned re
 
 If you discover a security vulnerability, please do **not** open a public issue.
 
-Instead, report it privately by contacting the repository owner via GitHub. Please include:
+Instead, report it privately through **Security and quality → Report a vulnerability** in the repository. Please include:
 
 - A description of the vulnerability and its potential impact
 - Steps to reproduce or a proof of concept, if available
