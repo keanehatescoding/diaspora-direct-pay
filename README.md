@@ -67,7 +67,7 @@ railway variables --service diaspora-direct-pay --set APP_URL=https://<your-publ
 
 `DATABASE_URL` is injected from the Postgres service declared in `railway.ts`.
 
-To run the same shape locally: `docker compose up -d db`, then put
+To run the same shape locally: `docker compose up --wait db`, then put
 `DATABASE_URL=postgres://app:app@localhost:5432/app` in `.env`, run
 `npm run db:migrate` and `npm run dev`. `docker compose down` keeps the data
 volume; add `-v` to remove it.
