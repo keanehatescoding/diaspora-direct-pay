@@ -16,7 +16,7 @@ async function main() {
     throw new Error("DATABASE_URL is required to run migrations.");
   }
 
-  const pool = new Pool({ connectionString });
+  const pool = new Pool({ connectionTimeoutMillis: 5_000, connectionString  });
   const db = drizzle(pool);
 
   try {
