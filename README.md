@@ -62,7 +62,7 @@ routing traffic to the new version.
 Set secrets on Railway itself, never in the repository:
 
 ```
-railway variables --set APP_URL=https://<your-public-host>
+railway variables --service diaspora-direct-pay --set APP_URL=https://<your-public-host>
 ```
 
 `DATABASE_URL` is injected from the Postgres service declared in `railway.ts`.

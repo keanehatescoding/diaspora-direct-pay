@@ -20,6 +20,7 @@ function getPool(): Pool {
   return globalForDb.pool;
 }
 
-export const pgDb = drizzle({ client: getPool(), schema });
+export const pool = getPool();
+export const pgDb = drizzle({ client: pool, schema });
 export const db: Db = pgDb;
 export { schema };
